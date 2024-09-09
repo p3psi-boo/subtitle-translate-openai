@@ -1,8 +1,8 @@
-﻿bool debug = false;
+﻿bool debug = true;
 
 string apiKey = '';
 string baseUrl = 'https://api.siliconflow.cn/v1';
-string model = 'deepseek-chat';
+string model = 'Qwen/Qwen1.5-14B-Chat';
 
 string GetTitle() {
   return
@@ -57,7 +57,7 @@ string Translate(string text, string &in srcLang, string &in dstLang) {
   
   string headers = "Content-Type: application/json\nAuthorization: Bearer " + apiKey + "\n";
 
-  string body = "{\"model\":\"deepseek-chat\",\"messages\":[{\"role\":\"system\",\"content\":\"You are a professional, authentic machine translation engine..\"},{\"role\":\"user\",\"content\":\"Translate the following text from " + srcLang + " to " + dstLang + ": " + text + "\"}]}";
+  string body = "{\"model\":\"" + model + "\",\"messages\":[{\"role\":\"system\",\"content\":\"You are a professional, authentic machine translation engine..\"},{\"role\":\"user\",\"content\":\"Translate the following text from " + srcLang + " to " + dstLang + ": " + text + "\"}]}";
 
   string url = baseUrl + '/chat/completions';
 
