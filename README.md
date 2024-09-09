@@ -1,6 +1,6 @@
 # subtitle-translate-openai
 
-使用[OPENAI Chat Completions API](https://cloud.tencent.com/product/tmt) API 为 PotPlayer 翻译实时字幕。基于 (BlackGlory/subtitle-translate-tmt)[https://github.com/BlackGlory/subtitle-translate-tmt/] 修改。Prompt 参考了[沉浸式翻译](https://immersivetranslate.com/)。
+使用 OpenAI Chat Completions API 为 PotPlayer 翻译实时字幕。基于 (BlackGlory/subtitle-translate-tmt)[https://github.com/BlackGlory/subtitle-translate-tmt/] 修改。Prompt 参考了[沉浸式翻译](https://immersivetranslate.com/)。
 
 ## 必要条件
 
