@@ -20,7 +20,7 @@
 bool debug = false;
 
 string apiKey = '';
-string baseUrl = 'https://api.openai.com/v1';
+string baseUrl = 'https://api.siliconflow.cn/v1';
 
 // 移除不再需要的腾讯API相关变量和函数
 // 删除 secretId, secretKey, DstLangTable, SrcLangTable 等
